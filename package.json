@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Sharubaa's Resume",
+  "main": "Main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharubaak/Sharubaa-Resume.git"
+  },
+  "author": "Sharubaa Kirubakaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharubaak/Sharubaa-Resume/issues"
+  },
+  "homepage": "https://github.com/Sharubaak/Sharubaa-Resume#readme"
+}

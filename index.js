@@ -1,23 +1,21 @@
-var connect = require('connect');
-var http = require('http');
- 
-var app = connect();
- function Aboutme(req,res,next)
-{
-    res.setHeader('Content-Type','text/plain');
-    res.end('Hi, My name is sharubaa');
+const express = require('express')
+const app = express()
+const port = 3000
 
-}
+app.get('/AboutMe', (req, res) => {
+  res.send('Hello!')
+})
 
-function Projects(req,res,next)
-{
-    res.setHeader('Content-Type','text/plain');
-    res.end('These are my projects');
+app.get('/Projects', (req, res) => {
+    res.send('These are a couple of projects I like to show')
+  })
+  app.get('/Contactus', (req, res) => {
+    res.send('If you have any questions do not hestitate. Send me a message down below or contact me on my email')
+  })
 
-}
-
-//create node.js http server and listen on port
-app.use('/Aboutme',Aboutme)
-app.use('/Projects',Projects)
-http.createServer(app).listen(3000);
-console.log('Server is running')
+  app.get('/AboutMe', (req, res) => {
+    res.send('Hello!')
+  })
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})

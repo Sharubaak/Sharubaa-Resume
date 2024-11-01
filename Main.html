@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/mdForDesktop.css" />
+    <link rel="stylesheet" href="./css/mdForSmall.css" />
+
+    <title>Sharubaa's Site</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header container">
+        <div class="navBar">
+          <div class="logo">
+              <h1>Sharubaa Kirubakaran</h1>
+          </div>
+          <nav class="navList">
+            <div class="navLines">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li>
+                <a href="#home" class="navLink scrollto active"
+                  > <span>Home</span></a
+                >
+              </li>
+              <li>
+                <a href="#about" class="navLink scrollto"
+                  ><span>About</span></a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="navLink scrollto"
+                  > <span>Projects</span></a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="navLink scrollto"
+                  > <span>Contact</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Home Section  -->
+    <section id="home">
+      <div class="home container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Sharubaa Kirubakaran<span></span></h1>
+          <a href="#contact"  class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="colLeft">
+          <div class="aboutImg">
+            <img src="Images\img.jpeg" alt="img" />
+          </div>
+        </div>
+        <div class="colRight">
+          <h1 class="sectionTitle">About <span>me</span></h1>
+          <article>
+            <h2>Student</h2>
+            <p>Tech Management IT stream</p>
+
+            <p>I like to read books and game in my spare time</p>
+            <img src="Images\book.png" alt="img" />
+          </article>
+         <div>
+          <p> Here's a little video about me that I have created for you to learn more about me</p>
+          <a href="./video.mp4" class="btn" target="_blank">Short Video</a>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projectsHeader">
+          <h1 class="sectionTitle">Recent <span>Projects</span></h1>
+            <img src="Images\project.webp" alt="img" />
+            <div class="tabs">
+                <div class="tab">
+                  <input type="radio" id="tab-1" name="tab-group-1" checked>
+                  <label for="tab-1">Project 1</label>
+                  <div class="content">
+                    <p>Wsl for Cloud computing</p>
+                    <a href="Documents\Wsl.py">Wsl</a>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="tab-2" name="tab-group-1">
+                  <label for="tab-2">Project 2</label>
+                  <div class="content">
+                    <p>This was a flow chart I had made for a problem solving class which I thought was cute</p>
+                    <a href="Documents\Flowchart problem solving midterm.docx">Problem Solving Flowchart</a>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" id="tab-3" name="tab-group-1">
+                  <label for="tab-3">Project 3</label>
+                  <div class="content">
+                    <p>This is a powerpoint we had made in my strategic Management class.</p>
+                    <a href="Documents\Walmart.pptx">Walmart Powerpoint</a>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="sectionTitle">Contact <span>info</span></h1>
+        </div>
+        <div class="contactItems">
+          <div class="contactItem">
+
+            <div class="contactInfo">
+              <form
+                action="#"
+                method="post"
+                class="phpEmailForm"
+              >
+              <p>Name</p>
+              <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <p>Email</p>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <p>Subject</p>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <p>Message</p>
+                <textarea
+                  style="height: 150px"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <div class="button">
+                  <button class = "button" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer container">
+        <div class="logo">
+          <h1><span>Thanks for reading till the end!</span></h1>
+          <p> Always available at</p>
+        </div>
+        <h2>sharubaa.kirubakaran@ontariotechu.net</h2>
+        <p>Copyright © 2024 Shark</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+      const navLines = document.querySelector(
+        ".header .navBar .navList .navLines"
+      );
+      const menuItem = document.querySelectorAll(
+        ".header .navBar .navList ul li a"
+      );
+      const head = document.querySelector(".header.container");
+      const mobileMenu = document.querySelector(
+        ".header .navBar .navList ul"
+      );
+
+      navLines.addEventListener("click", () => {
+        navLines.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+
+      document.addEventListener("scroll", () => {
+        var scrollPosition = window.scrollY;
+        if (scrollPosition < 250) {
+          head.style.backgroundColor = "transparent";
+        } else {
+          head.style.backgroundColor = "#29323c";
+        }
+      });
+
+      menuItem.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.toggle("active");
+          navLines.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

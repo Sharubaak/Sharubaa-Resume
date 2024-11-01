@@ -1,14 +1,12 @@
-const http = require('node:http');
+var connect = require('connect');
+ 
+var app = connect();
+ function 
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n');
+// respond to all requests
+app.use(function(req, res){
+  res.end('Hello\n');
 });
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+ 
+//create node.js http server and listen on port
+http.createServer(app).listen(3000);

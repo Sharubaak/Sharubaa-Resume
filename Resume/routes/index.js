@@ -8,13 +8,13 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET about me page. */
-router.get('/', function(req, res, next) {
+router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About' });
 });
 
 /* GET video of me page. */
 router.get('/video', function(req, res, next) {
-  res.render('index', { title: 'Video about me' });
+  res.render('index', { title: 'video about me' });
 });
 
 /* GET projects page. */

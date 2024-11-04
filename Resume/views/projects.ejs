@@ -1,0 +1,45 @@
+<% include partials/header.ejs %>
+<% include partials/main_nav.ejs %>
+
+<link rel= "stylesheet" href= "Content\projects.css"/>
+
+<main>
+  <div class="jumbotron">
+    <h1 class="display-4">Hello!</h1>
+    <p class="lead">My name is Sharubaa, and this is my <%= title %>.</p>
+    <hr class="my-4">
+  </div>
+</main>
+
+<section id="projects">
+  <div class="projects container">
+    <div class="projectsHeader">
+      <h1 class="sectionTitle">Recent <span>Projects</span></h1>
+      <img src="\Assets\images\project.webp" alt="img" />
+    </div>
+    
+    <div>
+          <label>Project 1</label>
+          <div class="content">
+            <p>WSL for Cloud Computing</p>
+            <a href="Assets\Documents\Wsl.py">WSL</a>
+          </div>
+        </div>
+
+          <label>Project 2</label>
+          <div class="content">
+            <p>This was a flowchart I created for a problem-solving class, which I thought was cute.</p>
+            <a href="Assets/Documents/Flowchart problem solving midterm.docx">Problem Solving Flowchart</a>
+        </div>
+        
+          <label>>Project 3</label>
+          <div class="content">
+            <p>This is a PowerPoint presentation we made in my Strategic Management class.</p>
+            <a href="\Assets\Documents\Walmart.pptx">Walmart PowerPoint</a>
+          </div>
+    </div>
+  </div>
+</section>
+
+<% include partials/bottom_nav.ejs %>
+<% include partials/footer.ejs %>

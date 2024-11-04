@@ -1,0 +1,34 @@
+body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+    line-height: 1.6; /* Improve line height for readability */
+}
+
+.container {
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding for internal spacing */
+}
+
+
+.projects img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Content Blocks */
+.content {
+    background-color: #e9ecef; /* Light grey background for content */
+    padding: 15px; /* Padding inside content boxes */
+    margin: 10px 0; /* Margin between content boxes */
+}
+
+/* Links */
+a {
+    color: #007bff; /* Bootstrap primary link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}

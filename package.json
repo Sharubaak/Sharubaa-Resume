@@ -4,7 +4,7 @@
   "description": "Sharubaa's Resume",
   "main": "Main.html",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
